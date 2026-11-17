@@ -7,16 +7,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
+    <!-- 背景の微細なグリッド＆マウス追従ライト -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- スクロール進捗バー -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- オープニング演出（初回アクセス時のみ一瞬走る） -->
+    <div class="intro-curtain" id="introCurtain" aria-hidden="true">
+      <div class="intro-terminal">
+        <span class="intro-prompt">&gt;</span>
+        <span class="intro-text" id="introText"></span>
+        <span class="intro-cursor">_</span>
+      </div>
+    </div>
+
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#" class="logo">K.KISHIMOTO</a>
+        <a href="#" class="logo">
+          <span class="logo-dot"></span>K.KISHIMOTO
+        </a>
         <nav class="nav">
           <a href="#about">About</a>
           <a href="#works">Works</a>
@@ -31,16 +49,22 @@
       <!-- Hero / Profile -->
       <section id="about" class="hero">
         <div class="hero-content">
-          <p class="hero-label">OSAKA METROPOLITAN UNIVERSITY COLLEGE OF TECHNOLOGY</p>
-          <h1 class="hero-title">
+          <div class="status-pill reveal" style="--delay: 0.05s">
+            <span class="status-dot"></span>
+            <span>OMUCT / Intelligent Information Course — 2nd Year</span>
+          </div>
+
+          <h1 class="hero-title reveal" style="--delay: 0.15s">
             岸本 浬
             <span class="hero-en">Kairi Kishimoto</span>
           </h1>
-          <p class="hero-bio">
-            大阪公立大学工業高等専門学校 知能情報コース 2年（大阪府出身）。<br />
-            Pythonを用いたツール開発やアルゴリズム実装、Unity (C#) によるゲーム制作に取り組んでいます。
+
+          <p class="hero-bio reveal" style="--delay: 0.25s">
+            大阪府出身。大阪公立大学工業高等専門学校 知能情報コース 2年。<br />
+            Pythonを用いたデスクトップツール・Webアプリの実装やアルゴリズム開発、Unity (C#) によるゲーム制作に取り組んでいます。
           </p>
-          <div class="hero-links">
+
+          <div class="hero-links reveal" style="--delay: 0.35s">
             <a href="https://github.com/dddd145" target="_blank" rel="noopener" class="btn btn-primary">
               GitHub (@dddd145)
             </a>
@@ -50,8 +74,8 @@
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="profile-icon-container">
+        <div class="hero-visual reveal" style="--delay: 0.25s">
+          <div class="profile-icon-container" title="Hover to pause orbit">
             <img src="img/icon.png" alt="Kairi Kishimoto" class="icon" />
             <div class="sushi-belt" aria-hidden="true">
               <img src="img/sushis/sushi1.png" alt="" class="sushi-item" style="--i: 1" />
@@ -73,13 +97,43 @@
 
       <!-- Works -->
       <section id="works" class="section">
-        <div class="section-header">
-          <h2>Works</h2>
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">SELECTED PROJECTS</span>
+            <h2>Works</h2>
+          </div>
           <span class="section-num">01</span>
         </div>
 
         <div class="works-grid">
-          <article class="work-card">
+          <article class="work-card reveal">
+            <div class="work-thumb">
+              <img
+                src="img/work_todo.png"
+                alt="Todo App"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="thumb-fallback" style="display: none">
+                <span>TODO-APP</span>
+              </div>
+            </div>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>Todo App</h3>
+                <a href="https://github.com/dddd145/todo-app" target="_blank" rel="noopener" class="repo-link">GitHub ↗</a>
+              </div>
+              <p>
+                タスクの作成・完了管理・整理をシンプルに行えるタスク管理アプリケーション。日常の作業や学習タスクをスムーズに扱うためのUI・データ管理を実装。
+              </p>
+              <ul class="tag-list">
+                <li>Web App</li>
+                <li>Task Management</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
             <div class="work-thumb">
               <img src="img/work_paint.png" alt="お絵描きソフト" />
             </div>
@@ -99,7 +153,7 @@
             </div>
           </article>
 
-          <article class="work-card">
+          <article class="work-card reveal">
             <div class="work-thumb">
               <img src="img/work_cr.png" alt="Command Runner" />
             </div>
@@ -119,7 +173,7 @@
             </div>
           </article>
 
-          <article class="work-card">
+          <article class="work-card reveal">
             <div class="work-thumb">
               <img src="img/work_clock.png" alt="超高速時計シミュレーション" />
             </div>
@@ -139,7 +193,7 @@
             </div>
           </article>
 
-          <article class="work-card">
+          <article class="work-card reveal">
             <div class="work-thumb">
               <img src="img/work_maze.png" alt="自動生成型コンソール迷路ゲーム" />
             </div>
@@ -159,7 +213,7 @@
             </div>
           </article>
 
-          <article class="work-card">
+          <article class="work-card reveal">
             <div class="work-thumb">
               <img src="img/work_colab.png" alt="対話型コンソールRPGゲーム" />
             </div>
@@ -183,13 +237,16 @@
 
       <!-- Skills -->
       <section id="skills" class="section">
-        <div class="section-header">
-          <h2>Skills</h2>
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">TECHNICAL STACK</span>
+            <h2>Skills</h2>
+          </div>
           <span class="section-num">02</span>
         </div>
 
         <div class="skills-layout">
-          <div class="skill-group">
+          <div class="skill-group reveal">
             <h3>Languages</h3>
             <dl class="skill-list">
               <div class="skill-item">
@@ -201,15 +258,15 @@
                 <dd>Unityを用いたゲーム開発や物理シミュレーション制作で使用。</dd>
               </div>
               <div class="skill-item">
-                <dt>HTML / CSS</dt>
-                <dd>高専2年のプログラミング授業および書籍を通じて学習中。</dd>
+                <dt>HTML / CSS / JavaScript</dt>
+                <dd>高専2年の授業や個人でのWebアプリ制作を通じて実践的に学習中。</dd>
               </div>
               <div class="skill-item">
                 <dt>Arduino (C/C++)</dt>
                 <dd>高専2年のマイクロコンピュータの授業で電子工作・制御の基礎を習得。</dd>
               </div>
               <div class="skill-item">
-                <dt>Java / JavaScript / SQL</dt>
+                <dt>Java / SQL</dt>
                 <dd>Progate等の学習プラットフォームにて基礎文法・データベース操作を学習。</dd>
               </div>
               <div class="skill-item">
@@ -219,7 +276,7 @@
             </dl>
           </div>
 
-          <div class="skill-group">
+          <div class="skill-group reveal" style="--delay: 0.1s">
             <h3>Tools & Environment</h3>
             <dl class="skill-list">
               <div class="skill-item">
@@ -249,48 +306,51 @@
 
       <!-- Certifications -->
       <section id="certifications" class="section">
-        <div class="section-header">
-          <h2>Certifications</h2>
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">QUALIFICATIONS</span>
+            <h2>Certifications</h2>
+          </div>
           <span class="section-num">03</span>
         </div>
 
         <ul class="cert-list">
-          <li class="cert-item">
-            <span class="cert-date">2026.01</span>
+          <li class="cert-item reveal">
+            <span class="cert-date">2026.10</span>
             <div class="cert-info">
               <h3>危険物取扱者 乙種第4類</h3>
               <p>ガソリン、灯油、軽油などの引火性液体の取り扱いおよび安全管理に関する国家資格。</p>
             </div>
           </li>
-          <li class="cert-item">
+          <li class="cert-item reveal">
             <span class="cert-date">2026.01</span>
             <div class="cert-info">
               <h3>ガス溶接技能講習</h3>
               <p>可燃性ガス及び酸素を用いた金属の溶接・切断業務に関する労働安全衛生法に基づく技能講習を修了。</p>
             </div>
           </li>
-          <li class="cert-item">
+          <li class="cert-item reveal">
             <span class="cert-date">2026.01</span>
             <div class="cert-info">
               <h3>アーク溶接技能講習</h3>
               <p>アーク溶接機の操作方法および感電防止等の安全衛生に関する特別教育・技能講習を修了。</p>
             </div>
           </li>
-          <li class="cert-item">
+          <li class="cert-item reveal">
             <span class="cert-date">2026.01</span>
             <div class="cert-info">
               <h3>日本漢字能力検定 2級</h3>
               <p>常用漢字の読み書きと文章内での適切な運用能力を習得。</p>
             </div>
           </li>
-          <li class="cert-item">
+          <li class="cert-item reveal">
             <span class="cert-date">2026.01</span>
             <div class="cert-info">
               <h3>実用英語技能検定 準2級</h3>
               <p>高校中級程度の英語理解力および表現力を習得。</p>
             </div>
           </li>
-          <li class="cert-item">
+          <li class="cert-item reveal">
             <span class="cert-date">2025.11</span>
             <div class="cert-info">
               <h3>ITパスポート試験 (IP)</h3>
@@ -302,19 +362,22 @@
 
       <!-- Contact -->
       <section id="contact" class="section contact-section">
-        <div class="section-header">
-          <h2>Contact</h2>
+        <div class="section-header reveal">
+          <div>
+            <span class="section-kicker">GET IN TOUCH</span>
+            <h2>Contact</h2>
+          </div>
           <span class="section-num">04</span>
         </div>
-        <p class="contact-lead">制作物に関するご質問やご連絡は、メールまたはGitHubよりお願いいたします。</p>
-        <div class="contact-links">
+        <p class="contact-lead reveal">制作物に関するご質問やご連絡は、メールまたはGitHubよりお願いいたします。</p>
+        <div class="contact-links reveal">
           <a href="mailto:k.kairi727@gmail.com" class="contact-card">
             <span class="contact-label">Email</span>
-            <span class="contact-value">k.kairi727@gmail.com</span>
+            <span class="contact-value">k.kairi727@gmail.com ↗</span>
           </a>
           <a href="https://github.com/dddd145" target="_blank" rel="noopener" class="contact-card">
             <span class="contact-label">GitHub</span>
-            <span class="contact-value">github.com/dddd145</span>
+            <span class="contact-value">github.com/dddd145 ↗</span>
           </a>
         </div>
       </section>
@@ -325,5 +388,74 @@
         <p>&copy; 2026 Kairi Kishimoto</p>
       </div>
     </footer>
+
+    <script>
+      // 1. オープニング演出（高速タイピング後に幕が上がる）
+      (function () {
+        const curtain = document.getElementById("introCurtain");
+        const textEl = document.getElementById("introText");
+        const command = "init kairi-kishimoto.portfolio";
+        let i = 0;
+
+        function typeChar() {
+          if (i < command.length) {
+            textEl.textContent += command.charAt(i);
+            i++;
+            setTimeout(typeChar, 22);
+          } else {
+            setTimeout(() => {
+              curtain.classList.add("is-hidden");
+              document.body.classList.add("is-loaded");
+            }, 220);
+          }
+        }
+
+        // セッション内で2回目以降の再読み込みは即座に表示
+        if (sessionStorage.getItem("introPlayed")) {
+          curtain.style.display = "none";
+          document.body.classList.add("is-loaded");
+        } else {
+          sessionStorage.setItem("introPlayed", "1");
+          setTimeout(typeChar, 120);
+        }
+      })();
+
+      // 2. スクロールに応じた要素のフェードイン
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+
+      document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+      // 3. 上部のスクロール進捗バー & マウス追従スポットライト
+      const progressBar = document.getElementById("scrollProgress");
+      window.addEventListener(
+        "scroll",
+        () => {
+          const scrollTop = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+          progressBar.style.width = `${progress}%`;
+        },
+        { passive: true }
+      );
+
+      document.addEventListener(
+        "pointermove",
+        (e) => {
+          document.documentElement.style.setProperty("--mouse-x", `${e.clientX}px`);
+          document.documentElement.style.setProperty("--mouse-y", `${e.clientY}px`);
+        },
+        { passive: true }
+      );
+    </script>
   </body>
 </html>
