@@ -2,240 +2,328 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>Kairi Kishimoto's Portfolio</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=yes"
-    />
+    <title>Kairi Kishimoto — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
     />
     <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
-    <h1>
-      <span style="font-family: DotGothic16,sans-serif">My Profile</span>
-    </h1>
-    
-    <div class="profile-icon-container">
-      <img src="img/icon.png" alt="icon" class="icon" />
-      <div class="sushi-belt">
-        <img src="img/sushis/sushi1.png" alt="sushi1" class="sushi-item" style="--i:1;">
-        <img src="img/sushis/sushi2.png" alt="sushi2" class="sushi-item" style="--i:2;">
-        <img src="img/sushis/sushi3.png" alt="sushi3" class="sushi-item" style="--i:3;">
-        <img src="img/sushis/sushi4.png" alt="sushi4" class="sushi-item" style="--i:4;">
-        <img src="img/sushis/sushi5.png" alt="sushi5" class="sushi-item" style="--i:5;">
-        <img src="img/sushis/sushi6.png" alt="sushi6" class="sushi-item" style="--i:6;">
-        <img src="img/sushis/sushi7.png" alt="sushi7" class="sushi-item" style="--i:7;">
-        <img src="img/sushis/sushi8.png" alt="sushi8" class="sushi-item" style="--i:8;">
-        <img src="img/sushis/sushi9.png" alt="sushi9" class="sushi-item" style="--i:9;">
-        <img src="img/sushis/sushi10.png" alt="sushi10" class="sushi-item" style="--i:10;">
-        <img src="img/sushis/sushi11.png" alt="sushi11" class="sushi-item" style="--i:11;">
-        <img src="img/sushis/sushi12.png" alt="sushi12" class="sushi-item" style="--i:12;">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="logo">K.KISHIMOTO</a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#works">Works</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </div>
-    <h3 class="name">岸本 浬 --Kairi Kishimoto</h3>
-    <div class="mine">
-      <p>
-        出身 - 大阪府<br />
-        所属 - 大阪公立大学工業高等専門学校<br />
-        コース - 知能情報コース<br />
-        学年 - 2年<br />
-      </p>
-    </div>
-    
-    <h1>
-      <span style="font-family: DotGothic16,sans-serif">Skills</span>
-    </h1>
-    
-    <h2 class="sub-heading">
-      <span style="font-family: DotGothic16,sans-serif">Language</span>
-    </h2>
-    
-    <div class="card-list">
-      <div class="card">
-        <h3>Python</h3>
-        <p>授業や個人でよく使う言語です。小学生の時から学習を重ね、一番練度が高い言語です。<br /></p>
-      </div>
-      <div class="card">
-        <h3>C#</h3>
-        <p>趣味でUnutyを使用した開発で使用しています。独学のため知識に偏りがあります。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Java</h3>
-        <p>Progateを利用し基礎を学習しました。<br /></p>
-      </div>
-      <div class="card">
-        <h3>JavaScript</h3>
-        <p>Progateを利用し基礎を学習しました。<br /></p>
-      </div>
-      <div class="card">
-        <h3>SQL</h3>
-        <p>Progateやその他ウェブサイトを利用し基礎を学習しました。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Scratch</h3>
-        <p>最初に学習を始めた言語です。プログラミングに興味を持つきっかけになりました。<br /></p>
-      </div>
-      <div class="card">
-        <h3>HTML</h3>
-        <p>高専2年生のプログラミングの授業で学習しました。テキストを購入し学習中です。<br /></p>
-      </div>
-      <div class="card">
-        <h3>CSS</h3>
-        <p>高専2年生のプログラミングの授業で学習しました。テキストを購入し学習中です。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Arduino</h3>
-        <p>高専2年生のマイクロコンピュータの授業で学習しました。<br /></p>
-      </div>
-    </div>
-    
-    <h2 class="sub-heading">
-      <span style="font-family: DotGothic16,sans-serif">Tools</span>
-    </h2>
-    
-    <div class="card-list">
-      <div class="card">
-        <h3>Visual Studio Code</h3>
-        <p>メインのエディタとして使用しており、拡張機能を使った効率的なコーディングに慣れています。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Unity</h3>
-        <p>C#を用いたゲーム開発、物理シミュレーションの作成で日常的に使用しています。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Git/GitHub</h3>
-        <p>個人プロジェクトでのバージョン管理や、高専でのチーム開発で使用しています。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Scratch</h3>
-        <p>主にWindowsを使用していますが、授業や開発環境の構築でLinux (Ubuntu) の基本操作も行います。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Google Colaboratory</h3>
-        <p>ブレインストーミングや設計の視覚化のために使用経験があります。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Progate</h3>
-        <p>ブレインストーミングや設計の視覚化のために使用経験があります。<br /></p>
-      </div>
-      <div class="card">
-        <h3>ArduinoIDE</h3>
-        <p>ブレインストーミングや設計の視覚化のために使用経験があります。<br /></p>
-      </div>
-      <div class="card">
-        <h3>TinkerCAD</h3>
-        <p>ブレインストーミングや設計の視覚化のために使用経験があります。<br /></p>
-      </div>
-      <div class="card">
-        <h3>Google Colaboratory</h3>
-        <p>ブレインストーミングや設計の視覚化のために使用経験があります。<br /></p>
-      </div>
-    </div>
-    
-    <h2 class="sub-heading">
-      <span style="font-family: DotGothic16,sans-serif">Certifications</span>
-    </h2>
-    
-    <div class="card-list">
-      <div class="card">
-        <h3>ITパスポート試験 (IP)</h3>
-        <p>2025年11月 取得 / 経営戦略、セキュリティ、AI/ビッグデータなど、ITを利活用するための基礎知識全般を習得していることを証明します。<br /></p>
-      </div>
-      <div class="card">
-        <h3>ガス溶接技能講習</h3>
-        <p>2026年1月 取得 / 可燃性ガス及び酸素を用いた金属の溶接、切断等の業務に関する知識と技能を習得し、労働安全衛生法に基づく安全な作業遂行能力を証明します。<br /></p>
-      </div>
-      <div class="card">
-        <h3>アーク溶接技能講習</h3>
-        <p>2026年1月 取得 / アーク溶接機を用いた金属の溶接に関する基礎知識、装置の操作方法、及び感電防止などの安全衛生知識を習得していることを証明します。<br /></p>
-      </div>
-      <div class="card">
-        <h3>日本漢字能力検定 2級</h3>
-        <p>2026年1月 取得 / 常用漢字をすべて理解し、文章の中で適切に活用できる能力、および公的文書や新聞などで使われる高度な漢字・語彙を習得していることを証明します<br /></p>
-      </div>
-      <div class="card">
-        <h3>実用英語技能検定 準2級</h3>
-        <p>2026年1月 取得 / 高校中級程度の英語力を有し、日常生活に必要な英語を理解し、また使用することができる能力を習得していることを証明します。<br /></p>
-      </div>
-    </div>
-    
-    <h1>
-      <span style="font-family: DotGothic16,sans-serif">Works</span>
-    </h1>
+    </header>
 
-    <div class="project-list">
-      <div class="project-card">
-        <img src="img/work_colab.png" alt="対話型コンソールゲームの実行画面" /> 
-        <div class="project-card-content">
-          <h3>対話型コンソールRPGゲーム</h3>
-          <p>Google Colab環境でPythonを使用し、`input()`と制御フローを用いて作成したテキストベースのRPGです。ユーザーとの対話を通じて、戦闘、回復、装備のアップグレードといった基本的なゲームサイクルを実現しました。</p>
-          <p class="tags">#Python #CLIゲーム #対話型 #オブジェクト指向基礎</p>
-          <a href="https://github.com/dddd145/txtrpg" class="link-button" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="img/work_maze.png" alt="自動生成型コンソール迷路ゲームの実行画面" /> 
-        <div class="project-card-content">
-          <h3>自動生成型コンソール迷路ゲーム</h3>
-          <p>Pythonで作成した、無限ステージ制の迷路探索ゲームです。「棒倒し法」というアルゴリズムを使用し、ステージクリアのたびに新しい迷路を自動生成する機能を実装しました。</p>
-          <p class="tags">#Python #迷路生成 #棒倒し法</p>
-          <a href="https://github.com/dddd145/maze" class="link-button" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="img/work_clock.png" alt="高速時計" /> 
-        <div class="project-card-content">
-          <h3>超高速時計シミュレーション</h3>
-          <p>Pythonのpygameライブラリを使用した、時計の針を増やしていった時の先端速度を計算して表示させるシミュレーターです。ボタンとスライドで操作します。特殊相対性理論なんて理論は考慮していません</p>
-          <p class="tags">#Python #pygame #光速時計 #特殊相対性理論</p>
-          <a href="https://github.com/dddd145/lightclock/tree/main" class="link-button" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="img/work_cr.png" alt="Command Runner" /> 
-        <div class="project-card-content">
-          <h3>Command Runner</h3>
-          <p>本作は、キーボードによる直接操作ではなく、テキストコマンドを入力してキャラクターを制御するサイドビュー・アクションゲームです。プログラミングの「コマンド入力」と「アクション」を融合させた新しい操作体験をコンセプトに制作しました。操作性を良くするために、履歴機能や補完機能なども実装しました。</p>
-          <p class="tags">#Python #pygame #アクションゲーム #コマンド入力 </p>
-          <a href="https://github.com/dddd145/Command-Runner" class="link-button" target="_blank">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="img/work_paint.png" alt="お絵かきソフト" /> 
-        <div class="project-card-content">
-          <h3>お絵描きソフト</h3>
-          <p>PythonとOpenCV、PySide6を用いて開発した、軽量かつ多機能なペイント・画像編集アプリケーションです。直感的なUIに加え、デジタルイラスト制作に必要な「筆圧シミュレーション」や「座標アフィン変換」を実装しています。</p>
-          <p class="tags">#Python #PySide6 #OpenCV #画像編集 </p>
-          <a href="https://github.com/dddd145/PyPaint" class="link-button" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <h1>
-      <span style="font-family: DotGothic16,sans-serif">Contact</span>
-    </h1>
-
-    <div class="contact-list">
-        <p>作品へのお問い合わせや質問など、お気軽にご連絡ください。</p>
-        
-        <div class="contact-item">
-            <strong>Email</strong>: <a href="mailto:k.kairi727@gmail.com">k.kairi727@gmail.com</a>
-        </div>
-        
-        <div class="contact-item">
-            <strong>GitHub</strong>: 
-            <a href="https://github.com/dddd145" target="_blank">
-                <img src="img/icon.png" alt="GitHubアイコン" class="social-icon">dddd145
+    <main class="container">
+      <!-- Hero / Profile -->
+      <section id="about" class="hero">
+        <div class="hero-content">
+          <p class="hero-label">OSAKA METROPOLITAN UNIVERSITY COLLEGE OF TECHNOLOGY</p>
+          <h1 class="hero-title">
+            岸本 浬
+            <span class="hero-en">Kairi Kishimoto</span>
+          </h1>
+          <p class="hero-bio">
+            大阪公立大学工業高等専門学校 知能情報コース 2年（大阪府出身）。<br />
+            Pythonを用いたツール開発やアルゴリズム実装、Unity (C#) によるゲーム制作に取り組んでいます。
+          </p>
+          <div class="hero-links">
+            <a href="https://github.com/dddd145" target="_blank" rel="noopener" class="btn btn-primary">
+              GitHub (@dddd145)
             </a>
+            <a href="mailto:k.kairi727@gmail.com" class="btn btn-secondary">
+              k.kairi727@gmail.com
+            </a>
+          </div>
         </div>
-    </div>
+
+        <div class="hero-visual">
+          <div class="profile-icon-container">
+            <img src="img/icon.png" alt="Kairi Kishimoto" class="icon" />
+            <div class="sushi-belt" aria-hidden="true">
+              <img src="img/sushis/sushi1.png" alt="" class="sushi-item" style="--i: 1" />
+              <img src="img/sushis/sushi2.png" alt="" class="sushi-item" style="--i: 2" />
+              <img src="img/sushis/sushi3.png" alt="" class="sushi-item" style="--i: 3" />
+              <img src="img/sushis/sushi4.png" alt="" class="sushi-item" style="--i: 4" />
+              <img src="img/sushis/sushi5.png" alt="" class="sushi-item" style="--i: 5" />
+              <img src="img/sushis/sushi6.png" alt="" class="sushi-item" style="--i: 6" />
+              <img src="img/sushis/sushi7.png" alt="" class="sushi-item" style="--i: 7" />
+              <img src="img/sushis/sushi8.png" alt="" class="sushi-item" style="--i: 8" />
+              <img src="img/sushis/sushi9.png" alt="" class="sushi-item" style="--i: 9" />
+              <img src="img/sushis/sushi10.png" alt="" class="sushi-item" style="--i: 10" />
+              <img src="img/sushis/sushi11.png" alt="" class="sushi-item" style="--i: 11" />
+              <img src="img/sushis/sushi12.png" alt="" class="sushi-item" style="--i: 12" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Works -->
+      <section id="works" class="section">
+        <div class="section-header">
+          <h2>Works</h2>
+          <span class="section-num">01</span>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card">
+            <div class="work-thumb">
+              <img src="img/work_paint.png" alt="お絵描きソフト" />
+            </div>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>お絵描きソフト (PyPaint)</h3>
+                <a href="https://github.com/dddd145/PyPaint" target="_blank" rel="noopener" class="repo-link">GitHub ↗</a>
+              </div>
+              <p>
+                Python・OpenCV・PySide6で開発した軽量ペイントおよび画像編集アプリ。筆圧シミュレーションやアフィン変換による座標操作を実装。
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>PySide6</li>
+                <li>OpenCV</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-thumb">
+              <img src="img/work_cr.png" alt="Command Runner" />
+            </div>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>Command Runner</h3>
+                <a href="https://github.com/dddd145/Command-Runner" target="_blank" rel="noopener" class="repo-link">GitHub ↗</a>
+              </div>
+              <p>
+                テキストコマンドを入力してキャラクターを操作するサイドビューアクションゲーム。快適性を高めるためコマンド履歴や入力補完機能も実装。
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>pygame</li>
+                <li>Game Dev</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-thumb">
+              <img src="img/work_clock.png" alt="超高速時計シミュレーション" />
+            </div>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>超高速時計シミュレーション</h3>
+                <a href="https://github.com/dddd145/lightclock/tree/main" target="_blank" rel="noopener" class="repo-link">GitHub ↗</a>
+              </div>
+              <p>
+                時計の針を増やしていった際の先端速度を計算・可視化するシミュレーター。スライダーとボタンでパラメータをリアルタイムに操作可能（相対論は非考慮）。
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>pygame</li>
+                <li>Simulation</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-thumb">
+              <img src="img/work_maze.png" alt="自動生成型コンソール迷路ゲーム" />
+            </div>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>自動生成型コンソール迷路ゲーム</h3>
+                <a href="https://github.com/dddd145/maze" target="_blank" rel="noopener" class="repo-link">GitHub ↗</a>
+              </div>
+              <p>
+                「棒倒し法」アルゴリズムを用いた無限ステージ制の迷路探索ゲーム。ステージクリアごとに新しい迷路を自動生成。
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Algorithm</li>
+                <li>CLI</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-thumb">
+              <img src="img/work_colab.png" alt="対話型コンソールRPGゲーム" />
+            </div>
+            <div class="work-body">
+              <div class="work-top">
+                <h3>対話型コンソールRPGゲーム</h3>
+                <a href="https://github.com/dddd145/txtrpg" target="_blank" rel="noopener" class="repo-link">GitHub ↗</a>
+              </div>
+              <p>
+                Google Colaboratory上で動作するテキストベースRPG。戦闘、回復、装備強化などのゲームサイクルをオブジェクト指向の基礎を取り入れて構築。
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>Google Colab</li>
+                <li>CLI</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <span class="section-num">02</span>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <dl class="skill-list">
+              <div class="skill-item">
+                <dt>Python <span class="badge">Main</span></dt>
+                <dd>小学生の頃から継続して学習しており、最も熟練度が高い言語。授業での課題からGUIアプリ・ゲーム開発まで幅広く使用。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>C#</dt>
+                <dd>Unityを用いたゲーム開発や物理シミュレーション制作で使用。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>HTML / CSS</dt>
+                <dd>高専2年のプログラミング授業および書籍を通じて学習中。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Arduino (C/C++)</dt>
+                <dd>高専2年のマイクロコンピュータの授業で電子工作・制御の基礎を習得。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Java / JavaScript / SQL</dt>
+                <dd>Progate等の学習プラットフォームにて基礎文法・データベース操作を学習。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Scratch</dt>
+                <dd>プログラミングを始めるきっかけとなった最初の言語。</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="skill-group">
+            <h3>Tools & Environment</h3>
+            <dl class="skill-list">
+              <div class="skill-item">
+                <dt>Visual Studio Code</dt>
+                <dd>メインエディタ。各種拡張機能を組み合わせた開発環境を構築。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Unity</dt>
+                <dd>C#と組み合わせた2D/3Dゲーム制作および物理挙動の検証に使用。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Git / GitHub</dt>
+                <dd>個人開発のソースコード管理および高専でのチーム開発で運用。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Linux (Ubuntu)</dt>
+                <dd>メインOSはWindowsだが、授業や開発環境構築においてUbuntuのCUI基本操作に対応。</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Google Colaboratory / Arduino IDE / TinkerCAD</dt>
+                <dd>Pythonの検証環境、マイコンへの書き込み、回路シミュレーションでそれぞれ使用。</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <div class="section-header">
+          <h2>Certifications</h2>
+          <span class="section-num">03</span>
+        </div>
+
+        <ul class="cert-list">
+          <li class="cert-item">
+            <span class="cert-date">2026.01</span>
+            <div class="cert-info">
+              <h3>危険物取扱者 乙種第4類</h3>
+              <p>ガソリン、灯油、軽油などの引火性液体の取り扱いおよび安全管理に関する国家資格。</p>
+            </div>
+          </li>
+          <li class="cert-item">
+            <span class="cert-date">2026.01</span>
+            <div class="cert-info">
+              <h3>ガス溶接技能講習</h3>
+              <p>可燃性ガス及び酸素を用いた金属の溶接・切断業務に関する労働安全衛生法に基づく技能講習を修了。</p>
+            </div>
+          </li>
+          <li class="cert-item">
+            <span class="cert-date">2026.01</span>
+            <div class="cert-info">
+              <h3>アーク溶接技能講習</h3>
+              <p>アーク溶接機の操作方法および感電防止等の安全衛生に関する特別教育・技能講習を修了。</p>
+            </div>
+          </li>
+          <li class="cert-item">
+            <span class="cert-date">2026.01</span>
+            <div class="cert-info">
+              <h3>日本漢字能力検定 2級</h3>
+              <p>常用漢字の読み書きと文章内での適切な運用能力を習得。</p>
+            </div>
+          </li>
+          <li class="cert-item">
+            <span class="cert-date">2026.01</span>
+            <div class="cert-info">
+              <h3>実用英語技能検定 準2級</h3>
+              <p>高校中級程度の英語理解力および表現力を習得。</p>
+            </div>
+          </li>
+          <li class="cert-item">
+            <span class="cert-date">2025.11</span>
+            <div class="cert-info">
+              <h3>ITパスポート試験 (IP)</h3>
+              <p>経営戦略、情報セキュリティ、ネットワーク、AI・データ利活用などITに関する基礎知識を習得。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact-section">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <span class="section-num">04</span>
+        </div>
+        <p class="contact-lead">制作物に関するご質問やご連絡は、メールまたはGitHubよりお願いいたします。</p>
+        <div class="contact-links">
+          <a href="mailto:k.kairi727@gmail.com" class="contact-card">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">k.kairi727@gmail.com</span>
+          </a>
+          <a href="https://github.com/dddd145" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/dddd145</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Kairi Kishimoto</p>
+      </div>
+    </footer>
   </body>
 </html>
